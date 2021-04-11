@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
     }));
   }
 
-  updateSelection(questionId, answer) {
+  updateSelectedAnswer({ questionId, answer }) {
     this.questions[questionId].selected = answer;
     this.result = '';
   }
